@@ -24,7 +24,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock 
     
     # Overrides default command so things don't shut down after the process ends - useful for debugging
-    command: /workspace/run.sh
+    command: sleep infinity
     env_file:
     - .env
     
